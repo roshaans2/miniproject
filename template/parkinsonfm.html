@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson' Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='parkinsonfmss.css') }}">
+    
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>PARKINSON'S  DETECTION</header>
+
+        <form action="/result" method="POST">
+
+            <div class="form" >
+
+                <div class="fields">
+
+                    <div class="input-field">
+                        <label class="t1">MDVP:Fo(Hz)</label>
+                        <input type="text" class="input" id="MDVP:Fo" name="MDVP:Fo" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label class="t1">MDVP:Fhi(Hz)</label>
+                        <input type="text" class="input" id="MDVP:Fhi" name="MDVP:Fhi" required>
+                    </div>
+
+
+                     <div class="input-field">
+                        <label class="t1">MDVP:Flo(Hz)</label>
+                        <input type="text" class="input" id="MDVP:Flo" name="MDVP:Flo" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label class="t1">MDVP:Jitter(%)</label>
+                        <input type="text" class="input" id="MDVP:Jitter(%)" name="MDVP:Jitter(%)" required>
+                    </div>
+
+
+                    <div class="input-field">
+                        <label class="t1">MDVP:Jitter(Abs)</label>
+                        <input type="text" class="input" id="MDVP:Jitter(Abs)" name="MDVP:Jitter(Abs)" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>MDVP:RAP</label>
+                        <input type="text"  class="input" id="MDVP:RAP" name="MDVP:RAP" required>
+                    </div>
+
+
+                    <div class="input-field">
+                         <label>MDVP:PPQ</label>
+                         <input type="text" class="input" id="MDVP:PPQ" name="MDVP:PPQ" required>
+                     </div>
+
+                   <div class="input-field">
+                        <label>Jitter:DDP</label>
+                        <input type="text" class="input" id="Jitter:DDP" name="Jitter:DDP" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>MDVP:Shimmer</label>
+                        <input type="text" class="input" id="MDVP:Shimmer" name="MDVP:Shimmer" required>
+                    </div>
+
+
+                    <div class="input-field">
+                        <label>MDVP:Shmmer(dB)</label>
+                        <input type="text" class="input" id="MDVP:Shmmer(dB)" name="MDVP:Shmmer(dB)" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>Shimmer:APQ3</label>
+                        <input type="text" class="input"  id="Shimmer:APQ3" name="Shimmer:APQ3" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>Shimmer:APQ5</label>
+                        <input type="text" class="input" id="Shimmer:APQ5" name="Shimmer:APQ5" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>MDVP:APQ</label>
+                        <input type="text" class="input" id="MDVP:APQ" name="MDVP:APQ" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>Shimmer:DDA</label>
+                        <input type="text" class="input" id="Shimmer:DDA" name="Shimmer:DDA" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>NHR</label>
+                        <input type="text" class="input" id="NHR" name="NHR" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>HNR</label>
+                        <input type="text" class="input" id="HNR" name="HNR" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>RPDE</label>
+                        <input type="text" class="input" id="RPDE" name="RPDE" required>
+                    </div>
+
+
+                    <div class="input-field">
+                        <label>DFA</label>
+                        <input type="text" class="input" id="DFA" name="DFA" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>Spread1</label>
+                        <input type="text" class="input" id="Spread1" name="Spread1" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>Spread2</label>
+                        <input type="text" class="input" id="Spread2" name="Spread2" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>D2</label>
+                        <input type="text" class="input" id="D2" name="D2" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>PPE</label>
+                        <input type="text" class="input" id="PPE" name="PPE" required>
+                    </div>
+  
+                </div>
+
+                <div class="inputfield">
+                     <input type="submit" value="Check" class="btn">
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

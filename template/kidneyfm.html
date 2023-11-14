@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidney Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='kidneyfmss.css') }}">
+</head>
+
+<body>
+
+
+
+   <section class="hero"> 
+    
+
+      <div class="wrapper">
+      
+          <form action="/result" method="post">
+      
+          <div class="title">
+            KIDNEY DISEASE DETECTION
+          </div>
+      
+          <div class="form">
+      
+             <div class="inputfield">
+                <label>Age</label>
+                <input type="text" class="input" id="age" name="age" required>
+               
+             </div>  
+      
+             <div class="inputfield">
+               <label>Blood pressure</label>
+               <input type="text" class="input" id="bp" name="bp" required>
+             </div>  
+      
+             <div class="inputfield">
+               <label>Albumin</label>
+               <input type="text" class="input" id="al" name="al" required>
+            </div>  
+      
+            <div class="inputfield">
+               <label>Pus Cell Clumps<br>(Present-1/Not present-0)</label>
+               <input type="text" class="input" id="pcc" name="pcc" required>
+            </div>  
+      
+            <div class="inputfield">
+               <label>Blood Glucose Random</label>
+               <input type="text" class="input" id="bgr" name="bgr" required>
+            </div>  
+      
+            <div class="inputfield">
+               <label>Blood Urea</label>
+               <input type="text" class="input" id="bu" name="bu" required>
+            </div>  
+      
+            <div class="inputfield">
+               <label>Serum Creatinine </label>
+               <input type="text" class="input" id="sc" name="sc" required>
+            </div>  
+      
+            <div class="inputfield">
+               <label>Hemoglobin</label>
+               <input type="text" class="input" id="hemo" name="hemo" required>
+            </div>  
+      
+            <!-- <div class="inputfield">
+              <label>Oldpeak</label>
+              <input type="text" class="input"  required>
+           </div>   -->
+      
+           <div class="inputfield">
+              <label>Packed Cell Volume</label>
+              <input type="text" class="input" id="pcv" name="pcv" required>
+           </div>  
+      
+           <div class="inputfield">
+              <label>Hypertension<br>(Yes-1/No-0)</label>
+              <input type="text" class="input" id="htn" name="htn" required>
+           </div>  
+      
+           <div class="inputfield">
+              <label>Diabetes Mellitus<br>(Yes-1/No-0)</label>
+              <input type="text" class="input" id="dm" name="dm" required>
+           </div>  
+
+           
+           <div class="inputfield">
+            <label>Appetite<br>(Good-1/Poor-0)</label>
+            <input type="text" class="input" id="appet" name="appet" required>
+         </div>  
+      
+      
+            <div class="inputfield">
+              <input type="submit" value="Check" class="btn">
+            </div>
+      
+         
+      
+          </div>
+      
+      </form>
+      
+      </div>	
+          
+      
+      </section>
+      
+      
+         
+      </body>
+      
+      </html>

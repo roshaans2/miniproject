@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Recommendation System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="doctors">
+    <div class="doctor">
+      <a href="/1"><img src="{{ url_for('static', filename='d1.jpg') }}" alt="Doctor 1" ></a>
+      <div class="info">
+        <h3>Dr. John Doe</h3>
+        <p>Cardiologist</p>
+      </div>
+    </div>
+    <div class="doctor">
+      <a href="/2"><img src="{{ url_for('static', filename='d2.jpg') }}" alt="Doctor 1" ></a>
+      <div class="info">
+        <h3>Dr. Rashmika</h3>
+        <p>Cardiologist</p>
+      </div>
+    </div>
+    <div class="doctor">
+      <a href="/3"><img src="{{ url_for('static', filename='d3.jpg') }}" alt="Doctor 1" ></a>
+      <div class="info">
+        <h3>Dr. Joseph Vijay</h3>
+        <p>Cardiologist</p>
+      </div>
+    </div>
+    <div class="doctor">
+      <a href="/4"><img src="{{ url_for('static', filename='d4.jpg') }}" alt="Doctor 1" ></a>
+      <div class="info">
+        <h3>Dr. Ajith Kumar</h3>
+        <p>Cardiologist</p>
+      </div>
+    </div>
+    <div class="doctor">
+      <a href="/5"><img src="{{ url_for('static', filename='d5.jpg') }}" alt="Doctor 1" ></a>
+      <div class="info">
+        <h3>Dr. Malavika</h3>
+        <p>Cardiologist</p>
+      </div>
+    </div>
+    <div class="doctor">
+      <a href="/6"><img src="{{ url_for('static', filename='d6.jpg') }}" alt="Doctor 1" ></a>
+      <div class="info">
+        <h3>Dr. Rajinikanth</h3>
+        <p>Cardiologist</p>
+      </div>
+    </div>
+    <div class="doctor">
+      <a href="/7"><img src="{{ url_for('static', filename='d7.jpg') }}" alt="Doctor 1" ></a>
+      <div class="info">
+        <h3>Dr. Deepika</h3>
+        <p>Cardiologist</p>
+      </div>
+    </div>
+    <!-- Add more doctor entries here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

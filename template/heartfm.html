@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='heartfmss.css') }}">
+</head>
+
+<body>
+
+
+
+<section class="hero"> 
+    
+
+<div class="wrapper">
+
+    <form action="/result" method="POST">
+
+    <div class="title">
+      HEART DISEASE DETECTION
+    </div>
+
+    <div class="form">
+
+       <div class="inputfield">
+          <label>Age</label>
+          <input type="text" class="input" id="age" name="age" required>
+         
+       </div>  
+
+       <div class="inputfield">
+         <label>Sex male(0) female(1)</label>
+         <input type="text" class="input" id="sex" name="sex" required>
+       </div>  
+
+       <div class="inputfield">
+         <label>Chest Pain Type (0-4)</label>
+         <input type="text" class="input" id="chest pain type" name="chest pain type" required>
+      </div>  
+
+      <div class="inputfield">
+         <label>Resting Blood Pressure</label>
+         <input type="text" class="input" id="trestbps" name="trestbps" required>
+      </div>  
+
+      <div class="inputfield">
+         <label>Serum Cholestrol</label>
+         <input type="text" class="input" id="serum cholestoral in mg/dl" name="serum cholestoral in mg/dl" required>
+      </div>  
+
+      <div class="inputfield">
+         <label>Fasting Blood Sugar</label>
+         <input type="text" class="input"  id="fasting blood sugar in mg/dl" name="fasting blood sugar in mg/dl" required>
+      </div>  
+
+      <div class="inputfield">
+         <label>Resting cardiographic results(Restecg)</label>
+         <input type="text" class="input" id="restecg" name="restecg" required>
+      </div> 
+
+      <div class="inputfield">
+         <label>Maximum Heart Rate </label>
+         <input type="text" class="input" id="thalach" name="thalach" required>
+      </div>  
+
+      <div class="inputfield">
+         <label>Exercise Induced Agina</label>
+         <input type="text" class="input" id="exang" name="exang" required>
+      </div>  
+
+      <div class="inputfield">
+        <label>Oldpeak</label>
+        <input type="text" class="input" id="oldpeak" name="oldpeak" required>
+     </div>  
+
+     <div class="inputfield">
+        <label>ST Segment</label>
+        <input type="text" class="input" id="slope" name="slope" required>
+     </div>  
+
+     <div class="inputfield">
+        <label>No of major Vessels</label>
+        <input type="text" class="input" id="ca" name="ca" required>
+     </div>  
+
+     <div class="inputfield">
+        <label>Thal</label>
+        <input type="text" class="input" id="thal" name="thal" required>
+     </div>  
+
+
+      <div class="inputfield">
+        <input type="submit" value="Check" class="btn">
+      </div>
+
+   
+
+    </div>
+
+</form>
+
+</div>	
+    
+
+</section>
+
+
+	
+</body>
+
+</html>

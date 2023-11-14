@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+        <title>Home</title>
+    </head>
+    <body>
+        <section class="hero_section">
+            <header>
+                <nav class="navbar">
+                    <span>DOCINE <i style="color: white;" class="fa-solid fa-notes-medical"></i></span>
+                    <div class="navbar_menu_container">
+                        <a href="#">Home</a>
+                        <a href="/about">About Us</a>
+                        <a href="#hosp">Hospitals</a>
+                        <a href="#yoga_diet">Diet Plan and Yoga</a>
+                        <!-- <a href="#yoga_diet">Yoga</a> -->
+                    </div>
+
+                </nav>
+            </header>
+            <div class="hero_section_container">
+                
+                <h1 class="hero_section_title">Disease Detection System</h1>
+                <h2>Helping you live longer, healthier, and better.</h2>
+            </div>
+        </section>
+        <div class="container">
+            <h1>Models to detect various disease</h1>
+        </div>
+      
+         <section class="container we_offer">
+            <div class="card">
+               <a href="/Brain"><img src="{{ url_for('static', filename='braintumor.jpg') }}" alt=""></a>
+               <h2>Brain Tumor</h2>
+            </div>
+            <!-- <div class="card">
+              <a href="/Malaria"><img src="{{ url_for('static', filename='malaria.jpg') }}" alt=""></a>
+              <h2>Malaria</h2>
+           </div> -->
+           <div class="card">
+              <a href="/diabetes"><img src="{{ url_for('static', filename='diabetes.jpg') }}" alt=""></a>
+              <h2>Diabetes</h2>
+           </div>
+           <!-- <div class="card">
+              <a href="/Pneumonia"><img src="{{ url_for('static', filename='pneumonia.webp') }}" alt=""></a>
+              <h2>Pneumonia</h2>
+           </div> -->
+           <div class="card">
+                <a href="/Corona"><img src="{{ url_for('static', filename='covid.jpg') }}" alt=""></a>
+                <h2>Covid</h2>
+            </div>
+            <div class="card">
+                <a href="/kidney"><img src="{{ url_for('static', filename='kidneydiy.jpg') }}" alt=""></a>
+                <h2>Chronic Kidney Disease</h2>
+            </div>
+            <div class="card">
+                <a href="/heart"><img src="{{ url_for('static', filename='heart.jpg') }}" alt=""></a>
+                <h2>Heart Disease</h2>
+            </div>
+            <div class="card">
+                <a href="/breastcancer"><img src="{{ url_for('static', filename='breastcancer.jpg') }}" alt=""></a>
+                <h2>Breast Cancer</h2>
+            </div>
+            <div class="card">
+                <a href="/parkinsons"><img src="{{ url_for('static', filename='Parkinsons.jpg') }}" alt=""></a>
+                <h2>Parkinson's Disease</h2>
+            </div>
+            <div class="card">
+                <a href="/doctor"><img src="{{ url_for('static', filename='d1.jpg') }}" alt=""></a>
+                <h2>Doctor Appointment</h2>
+            </div>
+         </section>
+         <section class="container bonus" id="yoga_diet">
+            <div class="con">
+                <h1>Need to Know best diet plans and yogasanas?</h1>
+                <p>When one follows a perfect diet plan and practice yoga, then the 'one' is always healthy.To know about best diet plans and yogasanas to prevent various disease, ckeck the following links</p>
+                <div class="btns">
+                    <a href="/diet"><button>Diet Plan</button></a>
+                    <a href="/yoga"><button>Yoga</button></a>
+                </div>
+              
+            </div>
+            <img src="{{ url_for('static', filename='dietyogaimg.jpg') }}" alt="">
+            
+         </section>
+         <div class="container">
+            <h1>Check out for Best Hospitals</h1>
+        </div>
+         <section class="container we_offer" id="hosp">
+            <div  class="flash">
+                <a href="/braintumorhosp"><div><span>Brain Tumor</span></div></a>
+            </div>
+            <div class="flash">
+                <a href="/malariahosp"><div><span>Malaria</span></div></a>
+           </div>
+           <div class="flash">
+            <a href="/diabeteshosp"><div><span>Diabetes</span></div></a>
+           </div>
+           <div class="flash">
+            <a href="/pneumoniahosp"><div><span>Pneumonia</span></div></a>
+           </div>
+           <div class="flash">
+            <a href="/coronahosp"><div><span>Covid</span></div></a> 
+            </div>
+            <div class="flash">
+                <a href="/kidneyhosp"><div><span>Chronic Kidney Disease</span></div> </a>
+            </div>
+            <div class="flash">
+                <a href="/hearthosp"><div><span>Heart Disease</span></div></a>
+            </div>
+            <div class="flash">
+                <a href="/breastcancerhosp"><div><span>Breast Cancer</span></div></a>
+            </div>
+            <div class="flash">
+                <a href="/parkinsonhosp"><div><span>Parkinson's Disease</span></div></a>
+            </div>
+        </section>
+
+
+         <!-- <section class="footer">
+            <div class="footer">
+                <span>
+                    <i style="color: white;" class="fa-1.5x fa-brands fa-unity"></i> Serendipitous
+                </span>
+            </div>
+        </section> -->
+         
+    </body>
+</html>

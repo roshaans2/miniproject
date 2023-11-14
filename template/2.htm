@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Rashmika - About the Doctor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            max-width: 500px; /* Increased card width */
+            margin: 20px; /* Added margin for spacing */
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        p {
+            color: #555;
+            font-size: 16px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        h3 {
+            color: #666;
+            font-size: 18px;
+        }
+        a {
+            text-decoration: none;
+        }
+        a.email-link {
+            color: #007bff;
+        }
+        img {
+            max-width: 100%; /* Make the image responsive within the card */
+            border-radius:10%; /* Make the image circular */
+            margin: 10px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="{{ url_for('static', filename='d2.jpg') }}" alt="Dr. John Doe" width="150" height="150">
+        <h1>Dr. Rashmika</h1>
+        <p>Dr. Rashmika is a dedicated and experienced cardiologist with a passion for improving the heart health of his patients. With over 15 years of practice, he has helped numerous individuals lead healthier lives.</p>
+        <h2>Contact:</h2>
+        <h3>Phone: 987-654-3210</h3>
+        <h3>Email: <a class="email-link" href="mailto:abc@gmail.com">abc@gmail.com</a></h3>
+        <a href="https://meet.google.com/ecr-aexc-gez"><button>Virtual Meet (7.30-8.30pm)</button></a>
+        <button>For Appointments</button>
+    </div>
+</body>
+</html>
