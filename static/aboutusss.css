@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+
+
+.hero_section{
+    background: url(./aboutusimg.jpg);
+    background-size: cover; 
+    background-position: center;
+    min-height: 60vh;
+ 
+}
+    
+
+
+.container {
+    margin: 3rem auto;
+    width: 80%;
+}
+
+p {
+    padding-top: 2%;
+    font-size: 17px;
+    line-height: 2;
+
+}
+
+
+h1 {
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 50%;
+    
+}
+
+
+.picture{
+    display: flex;
+    flex-wrap: wrap; /* responsive */
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.picture .card{
+
+    border-radius: 20%;
+    overflow: hidden;
+    /* border: 1px solid #e0e0e0; */
+    transition: all 0.3s ease-in-out ;
+    /* margin: 12px; */
+    
+} 
+
+.picture .card img{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+ 
+
+
+}
+
+.picture .card h2{
+    padding: 10px;
+    font-size: 15px;
+    text-align:left;
+    font-weight: 400;
+}
+
+.picture .card.inside i{
+    width: 20px;
+}
+
+.picture .card:hover{
+    transform: scale(1.05);
+
+}
+
+.picture .card .inside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.inside div a i{
+    color: black;
+    cursor: pointer;
+}
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.footer i {
+    color: red;
+}
+

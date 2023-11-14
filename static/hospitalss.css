@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+
+
+.hero_section{
+    background: url(./hospitalbgimg.jpg);
+    color: white;
+    min-height: 60vh;
+    background-position: center; 
+   background-repeat: no-repeat; 
+   background-size: cover; 
+    
+}
+
+.heading {
+    padding-top: 2%;
+    text-align: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 3rem auto;
+    width: 80%;
+}
+
+.hosp1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    
+}
+
+.content{
+    width: 400px;
+    height: 600px;
+}
+
+img {
+    border-radius: 10px;
+    height: 50%;
+    width: 50%;
+}
+
+.btn {
+    display: flex;
+    gap: 1rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.btn1, .btn2, .btn3 {
+    border-radius: 10%;
+    background-color: black;
+    color: white;
+    height: 55px;
+    width: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn1:hover:hover {
+    transform: scale(1.15);
+
+}
+
+.btn2:hover:hover {
+    transform: scale(1.15);
+
+}
+
+.btn3:hover:hover {
+    transform: scale(1.15);
+
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+i {
+    color: red;
+}
+
+@media only screen and (max-width:400px){
+    .heading{
+        font-size: 12px;
+    }
+
+    .hosp1 .content{
+        font-size: 12px;
+    }
+
+    .content{
+        height: 300px;
+    }
+
+
+
+}
+
+@media only screen and (max-width:1024px){
+    .heading{
+        font-size: 18px;
+    }
+
+    .hosp1 .content{
+        font-size: 12px;
+    }
+
+    .content{
+        height: 400px;
+        width: 350px;
+    }
+
+
+
+}
+
+@media only screen and (max-width:1215px){
+    .hosp1 .content{
+        
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .hosp1 img{
+        width: 300px;
+        
+    }
+
+   
+}
+
+@media only screen and (max-width:900px){
+    .hosp1 .content{
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    
+
+    .hosp1 .content{
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    
+
+    .hosp1 .content{
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width:1025px){
+    
+
+    .hosp1 .content{
+        height: 450px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

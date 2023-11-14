@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+
+
+.hero_section{
+    background: url(./dietplanimg.jpg);
+    color: white;
+    min-height: 60vh;
+    background-position: center; 
+   background-repeat: no-repeat; 
+   background-size: cover; 
+}
+  
+
+
+.container {
+    margin: 3rem auto;
+    width: 80%;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 350;
+}
+
+p {
+    font-size: 17px;
+}
+
+.list {
+    padding: 2%;
+    font-size: 17px;
+}
+
+li {
+    font-size: 17px;
+}
+
+.video {
+    padding-bottom: 2%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+i {
+    color: red;
+}
+
+@media only screen and (max-width:650px){
+    .video iframe{
+        width: 90%;
+        height: 50%;
+    }
+}
+
+
+
+

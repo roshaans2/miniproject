@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+.hero_section{
+    /* background-image: url(./images/hero_section_bg.jpg); */
+    /* background-image: url(./images/bg1.webp); */
+    background-image: url(./hmbg.jpeg);
+    color:#EEEEEE;
+    background-size: cover;
+    min-height: 100vh;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    height: 60px;
+    padding: 16px 48px;
+    font-weight: bold;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    /* font-size: bold; */
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.navbar_menu_container{
+    display: flex;
+    gap: 20px;
+}
+
+.hero_section_container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(75vh - 60px);
+    gap: 32px;
+}
+
+
+.hero_section_title{
+    font-size: 36px;
+    font-weight: bold; 
+    text-align: center;
+}
+
+.container{
+    margin: 5rem auto;
+    width: 80%;
+    
+}
+
+.container h1{
+    text-align: center;
+}
+
+.we_offer{
+    display: flex;
+    flex-wrap: wrap; /* responsive */
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.we_offer .card{
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease-in-out ;
+    margin: 12px;
+    cursor: pointer;
+} 
+
+.we_offer .card img{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+ 
+
+
+}
+
+.we_offer .card h2{
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.we_offer .card:hover{
+    transform: scale(1.05);
+
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.we_offer .flash{
+    border: 1px solid rgb(235,233,233);
+    box-shadow: 0 1px 3px rgb(226,223,223);
+    width: 300px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 12px;
+    cursor: pointer;
+    /* background-color: black; */
+    transition: all 0.3s ease-in-out ;
+   
+}
+
+.we_offer .flash span{
+    font-size: 1.2rem;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    /* color: white; */
+   
+    
+
+
+}
+
+.flash:hover{
+    transform: scale(1.05);
+
+    
+}
+
+a{
+    color: black;
+
+}
+
+.bonus{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   height: 400px;
+   background-color: black;
+   color: white;
+ 
+}
+.bonus .con{
+    position: absolute;
+    right: 30%;
+    bottom: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 65%;
+}
+
+.bonus .con .btns{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.bonus img{
+    position: absolute;
+    width: 35%;
+    right: -5%;
+   
+    
+}
+
+.btns button{
+    border-radius: 10px;
+    width: 100px;
+    height: 35px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.btns button:hover {
+    transform: scale(1.15);
+}
+
+i {
+    color: red;
+}
+
+.hero_section .navbar span{
+    font-size: 36px;
+}
+
+
+@media only screen and (max-width:900px) {
+
+    .bonus .con{
+        bottom:10%;
+    }
+
+    .bonus img{
+        height: 50%;
+    }
+    
+}
+
+@media only screen and (max-width:412px) {
+
+    .bonus .con{
+        bottom:5%;
+    }
+
+    .bonus img{
+        height: 50%;
+    }
+
+    .hero_section_title{
+        font-size: 18px;
+    }
+
+    .hero_section_container h2{
+        font-size: 12px;
+    }
+
+    .hero_section .navbar span{
+       font-size: 18px;
+    }
+    
+}
+
+@media only screen and (max-width:280px) {
+
+  .bonus .con h1,p{
+      font-size: 14px;
+  }
+
+  .bonus img{
+      visibility: hidden;
+  }
+
+  .container h1{
+      font-size: 12px;
+  }
+  .navbar{
+      visibility: hidden;
+  }
+
+    
+}
+
+@media only screen and (max-width:600px) {
+
+    .hero_section_container h2{
+        font-size: 12px;
+    }
+
+    .hero_section_title{
+        font-size: 18px;
+    }
+
+    .navbar a{
+        font-size: 10px;
+    }
+
+    .navbar span{
+        font-size: 10px;
+    }
+
+    .hero_section .navbar span{
+        font-size: 18px;
+     }
+      
+  }
+
+  @media only screen and (max-width:414px) {
+
+    .navbar{
+        padding: 10px;
+    }
+    .bonus .con h1,p{
+        font-size: 14px;
+    }
+
+    .bonus img{
+        height: 25%;
+    }
+
+      
+  }
+
+@media only screen and (max-width:400px){
+    .hero_section .navbar span{
+        font-size: 10px;
+     }
+}
+
+@media only screen and (max-width:720px){
+    .hero_section .navbar span{
+        font-size: 18px;
+     }
+
+     .navbar a{
+        font-size: 10px;
+    }
+
+
+}
+
+
+
+
+
+
+  
+
+
+

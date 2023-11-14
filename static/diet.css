@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+.hero_section{
+    background-image: url(dietbg.jpeg) ;
+    background-size: cover;
+    min-height: 100vh;
+    
+}
+
+.container{
+    margin: 5rem auto;
+    width: 80%;
+    
+}
+
+.diet_plan{
+    display: flex;
+    flex-wrap: wrap; /* responsive */
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.diet_plan .card{
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out ;
+    margin: 12px;
+} 
+
+.diet_plan .card img{
+    width: 375px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+ 
+
+
+}
+
+
+.diet_plan .card:hover{
+    transform: scale(1.05);
+
+}
+
+

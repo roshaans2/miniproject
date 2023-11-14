@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+
+
+.hero_section{
+    background: url(./diabeteswpimg.jpg);
+    color: white;
+    min-height: 60vh;
+   background-size: cover; 
+}
+    
+
+
+.container {
+    margin: 3rem auto;
+    width: 80%;
+}
+
+
+.p1 {
+    padding-top: 2%;
+    font-size: 17px;
+
+}
+
+
+.history_title {
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 50%;
+    
+}
+
+.p2 {
+    padding-top: 2%;
+    font-size: 17px;
+
+}
+
+
+
+.info_title {
+    color: black;
+    font-size: 36px;
+    font-weight: 250;
+    line-height: 1.2;
+
+}
+
+.list1 {
+    padding: 2%;
+    font-size: 17px;
+}
+
+
+
+
+
+.symptoms_title {
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 50%;
+}
+
+.list2 {
+    padding: 2%;
+    font-size: 17px;
+}
+
+.treatment_title {
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 50%;
+}
+
+
+.p3 {
+    padding-top: 2%;
+    font-size: 17px;
+
+}
+
+
+.cause_title {
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 50%;
+}
+
+.list3 {
+    padding: 2%;
+    font-size: 17px;
+}
+
+
+.complication_title {
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 50%;
+}
+
+.list4 {
+    padding: 2%;
+    font-size: 17px;
+}
+
+.prevention_title {
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 50%;
+}
+
+.list5 {
+    padding: 2%;
+    font-size: 17px;
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+button {
+    border-radius: 10%;
+    background-color: black;
+    color: white;
+    height: 55px;
+    width: 100px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.15);
+
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+i {
+    color: red;
+}
+
+
+
