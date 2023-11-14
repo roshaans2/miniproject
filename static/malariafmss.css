@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(./dpfmimg.webp);
+    /* background-color: #DFCFBE ; */
+    background-position: cover; 
+    background-repeat: no-repeat;  
+    background-size: cover;    
+}
+
+#left_m
+{
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+  
+.img_holder img{
+    max-width: 100%; max-height: 100%;
+    border-radius: 10px;
+}
+
+.btn-file {
+position: relative;
+overflow: hidden;
+width: 10%;
+padding: 8px 10px;
+font-size: 15px; 
+border: 0px;
+background: black;
+color: #fff;
+cursor: pointer;
+border-radius: 3px;
+outline: none;
+}
+
+.btn-file input[type=file],input[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+    
+}
+
+
+
+
+
